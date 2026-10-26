@@ -1,8 +1,34 @@
 # ADLC
 
-A spec-driven, machinery-enforced AI software development lifecycle (AI-DLC) for building regulated, HIPAA-compliant healthcare software with coding agents.
+A spec-driven, machinery-enforced AI software development lifecycle (AI-DLC) for healthcare agents building software for HIPAA-regulated environments.
 
 **Topics:** `ai-agents` · `sdlc` · `healthcare` · `claude-code` · `hipaa` · `fhir` · `spec-driven-development`
+
+---
+
+## The Pipeline at a Glance
+
+```mermaid
+flowchart LR
+    A[Request] --> B[Spec]
+    B --> C[4 Canonical Scenarios]
+    C --> D[Skill Selection]
+    D --> E[Tests + Planted Faults]
+    E --> F[Human Review]
+    F --> G[Merge]
+    G -. revert fails a test .-> E
+```
+
+Every change flows left to right; nothing merges without tests behind it and a human where risk lives.
+
+---
+
+## Quick Start
+
+1. Point your coding agent (e.g. Claude Code) at this repo — it reads `AGENTS.md` and `CLAUDE.md` as its operating rules.
+2. Give it a feature request; the agent runs `feature-grooming` to draft a spec + 4 canonical scenarios in `docs/spec/` before writing code.
+3. To replay the worked example, feed it the "insurance-verified appointment booking" prompt from the section below and watch it halt on `HOLD` until a human records `RESOLVED-HOLD` in `docs/journal.md`.
+4. Validate any change with `npm run verify` (0 skipped/disabled tests required).
 
 ---
 
