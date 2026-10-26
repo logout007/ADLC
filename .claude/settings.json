@@ -1,0 +1,27 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "networkAllowlist": [
+      "registry.npmjs.org",
+      "localhost"
+    ]
+  },
+  "blockedCommands": [
+    "rm -rf /",
+    "git push --force",
+    "drop database",
+    "truncate table",
+    "curl -X POST http://*",
+    "env",
+    "printenv"
+  ],
+  "protectedFolders": [
+    "test/invariants/",
+    "scripts/verify.js",
+    ".claude/"
+  ],
+  "phiScanner": {
+    "enabled": true,
+    "failOnRealIdentifiers": true
+  }
+}

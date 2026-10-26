@@ -1,0 +1,5 @@
+{
+  "name": "healthcare-frontend",
+  "version": "1.0.0",
+  "description": "Frontend healthcare UI skills: accessible clinical components, WCAG 2.1 AA charts, PHI forms, patient search, emergency break-glass modals, real-time alerts, and session lock."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "healthcare-database",
+  "version": "1.0.0",
+  "description": "Database healthcare engineering skills: expand-and-contract schema migrations, clinical query optimization, and MRN/timeline indexing."
+}

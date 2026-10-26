@@ -1,0 +1,5 @@
+{
+  "name": "healthcare-backend",
+  "version": "1.0.0",
+  "description": "Backend healthcare engineering skills: FHIR R4, HL7 v2.x, clinical CDS logic, medication safety, LOINC lab processing, scheduling, encryption, and HIPAA audit trails."
+}

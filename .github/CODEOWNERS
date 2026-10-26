@@ -1,0 +1,14 @@
+# CODEOWNERS for Aponiar AI-DLC Standard
+# Human-only areas require review and approval from named senior engineers.
+
+# RBAC and Data Projections
+/src/middleware/rbac.ts @lead-engineer @security-lead
+/src/routes/appointments.ts @lead-engineer
+
+# Authentication and Sessions
+/src/middleware/auth.ts @lead-engineer @security-lead
+
+# Invariant & Harness Rules
+/test/invariants/ @qa-lead @lead-engineer
+/scripts/verify.js @qa-lead
+/scripts/test-planted-fault.js @qa-lead

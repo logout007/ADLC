@@ -1,0 +1,5 @@
+{
+  "name": "healthcare-testing",
+  "version": "1.0.0",
+  "description": "Healthcare QA and test engineering skills: clinical logic unit tests, integration testing, FHIR conformance, WCAG accessibility, PHI privacy leakage testing, E2E user journeys, invariant tests, anti-fake test detection, and adversarial safety reviews."
+}
